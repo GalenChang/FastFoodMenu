@@ -1,12 +1,12 @@
 const fastFoodItems = {
-    cokeLarge:     {calories: 380, fat: 0, sodium: 10},
-    cokeMedium:    {calories: 290, fat: 0, sodium: 5},
-    cokeSmall:     {calories: 140, fat: 0, sodium: 0},
+    sodaLarge:     {calories: 380, fat: 0, sodium: 10},
+    sodaMedium:    {calories: 290, fat: 0, sodium: 5},
+    sodaSmall:     {calories: 140, fat: 0, sodium: 0},
     frappeLarge:   {calories: 600, fat: 25, sodium: 360},
     frappeSmall:   {calories: 410, fat: 19, sodium: 230},
-    whopper:        {calories: 650, fat: 37, sodium: 910},
-    doubleWhopper: {calories: 900, fat: 56, sodium: 980},
-    tripleWhopper: {calories: 1160, fat: 75, sodium: 1050},
+    burger:        {calories: 650, fat: 37, sodium: 910},
+    doubleBurger: {calories: 900, fat: 56, sodium: 980},
+    tripleBurger: {calories: 1160, fat: 75, sodium: 1050},
     chickenSandwich: {calories: 660, fat: 40, sodium: 1220},
     friesLarge:    {calories: 500, fat: 22, sodium: 900},
     friesMedium:   {calories: 410, fat: 18, sodium: 570},
@@ -43,8 +43,8 @@ class fastFoodMenu {
     }
 }
 
-const myMenu = new fastFoodMenu(fastFoodItems);
-myMenu.add("cokeLarge");
-myMenu.add("frappeLarge");
-myMenu.add("tripleWhopper");
-myMenu.add("friesLarge");
+const userOrder = new fastFoodMenu(fastFoodItems);
+userOrder.add("sodaLarge");
+userOrder.add("frappeLarge");
+userOrder.add("tripleBurger");
+userOrder.add("friesLarge");
